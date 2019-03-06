@@ -1,11 +1,11 @@
 if Rails.env.development?
   Annotate.set_defaults(
-    "show_foreign_keys"   => "true",
-    "show_indexes"        => "true",
+    "show_foreign_keys" => "true",
+    "show_indexes" => "true",
     "exclude_controllers" => "true",
-    "exclude_helpers"     => "true",
-    "exclude_tests"       => "true",
-    "sort"                => "true"
+    "exclude_helpers" => "true",
+    "exclude_tests" => "true",
+    "sort" => "true"
   )
 
   # Annotate models

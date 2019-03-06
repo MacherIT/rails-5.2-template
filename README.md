@@ -1,4 +1,6 @@
-# Gema
+Este repositorio quedó en desuso. La versión nueva puede encontrarse en https://github.com/MacherIT/rails-template.
+
+# Rails 5.2 Template
 
 This is a Rails 5 app.
 
@@ -6,16 +8,16 @@ This is a Rails 5 app.
 
 This README describes the purpose of this repository and how to set up a development environment. Other sources of documentation are as follows:
 
-* UI and API designs are in `doc/`
+- UI and API designs are in `doc/`
 
 ## Prerequisites
 
 This project requires:
 
-* Ruby 2.4.2, preferably managed using [rbenv][]
-* Chromedriver for Capybara testing
-* PostgreSQL must be installed and accepting connections
-* [Redis][] must be installed and running on localhost with the default port. This may be done following instructions for [Ubuntu 16](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04)
+- Ruby 2.4.2, preferably managed using [rbenv][]
+- Chromedriver for Capybara testing
+- PostgreSQL must be installed and accepting connections
+- [Redis][] must be installed and running on localhost with the default port. This may be done following instructions for [Ubuntu 16](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04)
 
 On a Mac, you can obtain all of the above packages using [Homebrew][].
 
@@ -27,10 +29,10 @@ If you need help setting up a Ruby development environment, check out this [Rail
 
 Run the `bin/setup` script. This script will:
 
-* Check you have the required Ruby version
-* Install gems using Bundler
-* Create local copies of `.env` and `database.yml`
-* Create, migrate, and seed the database
+- Check you have the required Ruby version
+- Install gems using Bundler
+- Create local copies of `.env` and `database.yml`
+- Create, migrate, and seed the database
 
 ### Run it!
 
@@ -42,19 +44,19 @@ Run the `bin/setup` script. This script will:
 
 Ensure the following environment variables are set in the deployment environment:
 
-* `POSTMARK_API_KEY`
-* `RACK_ENV`
-* `RAILS_ENV`
-* `REDIS_URL`
-* `SECRET_KEY_BASE`
-* `SIDEKIQ_WEB_PASSWORD`
-* `SIDEKIQ_WEB_USERNAME`
+- `POSTMARK_API_KEY`
+- `RACK_ENV`
+- `RAILS_ENV`
+- `REDIS_URL`
+- `SECRET_KEY_BASE`
+- `SIDEKIQ_WEB_PASSWORD`
+- `SIDEKIQ_WEB_USERNAME`
 
 Optionally:
 
-* `RAILS_LOG_TO_STDOUT`
-* `RAILS_SERVE_STATIC_FILES`
+- `RAILS_LOG_TO_STDOUT`
+- `RAILS_SERVE_STATIC_FILES`
 
-[rbenv]:https://github.com/sstephenson/rbenv
-[redis]:http://redis.io
-[Homebrew]:http://brew.sh
+[rbenv]: https://github.com/sstephenson/rbenv
+[redis]: http://redis.io
+[homebrew]: http://brew.sh

@@ -28,6 +28,7 @@ class JavascriptHelperTest < ActionView::TestCase
   # sprockets-rails >= 3.2.0.
   def allow_unknown_assets
     return unless respond_to?(:unknown_asset_fallback)
+
     stubs(:unknown_asset_fallback).returns(true)
   end
 end
